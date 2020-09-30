@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/png" href="Images/logo.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/oceni.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#menuOpener").click(function () {
+                if ($(".navbar-menu").hasClass("active")) {
+                    $(".navbar-menu").removeClass("active");
+                } else {
+                    $(".navbar-menu").addClass("active");
+                }
+
+            });
+        });
+    </script>
+
+    <title>Oceni Beats</title>
+</head>
+
+<body class="index" id="oceni_page">
+    <div class="page-content-wrapper">
+        <div class="navbar" id="index-nav">
+            <div>
+                <ul id="list-navbar">
+
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="galerija.html">Slušalice</a></li>
+                    <li><a class="active" href="oceni.html">Oceni</a></li>
+                    <li><a href="autor.html">Autor</a></li>
+
+                    <span id="menuOpener"><i class="fa fa-bars"></i></span>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mobile-nav">
+            <nav class="navbar-menu">
+
+                <ul class="menu-listing">
+
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="galerija.html">Slušalice</a></li>
+                    <li><a href="oceni.html">Oceni</a></li>
+                    <li><a href="autor.html">Autor</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+
+        <div id="telo">
+
+            <div class="kontakt">
+                <p style="color: white;">Grade your movie</p>
+                <form action="kontakt.php" name="myForm">
+
+                    <div style="color: white;" class="label">
+                        <label style="color: white;">Ime*:</label>
+                    </div>
+                    <div>
+                        <input class="polja" name="ime" type="text" />
+                    </div>
+
+                    <div class="label">
+                        <label style="color: white;">Prezime*:</label>
+                    </div>
+                    <div>
+                        <input class="polja" name="prezime" type="text" />
+                    </div>
+
+                    <div class="label">
+                        <label style="color: white;">E-mail*:</label>
+                    </div>
+                    <div>
+                        <input class="polja" name="email" type="text" />
+                    </div>
+
+                    <div class="label">
+                        <label style="color: white;">Telefon: </label>
+                    </div>
+                    <div>
+                        <input class="polja" name="telefon" type="text"
+                            onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;" />
+                    </div>
+
+                    <div class="label">
+                        <label style="color: white;">Slušalice:</label>
+                    </div>
+                    <div>
+                        <select class="form-control" name="sell" id="sel1">
+                            <option name="sell" value="Beats Studio 3">Beats Studio 3</option>
+                            <option name="sell" value="Beats Solo Pro">Beats Solo Pro</option>
+                            <option name="sell" value="Beats Solo 3">Beats Solo 3</option>
+                            <option name="sell" value="Beats EP">Beats EP</option>
+                            <option name="sell" value="Beats Powerbeats">Beats Powerbeats Pro</option>
+                        </select>
+                    </div>
+                    <div class="label">
+                        <label style="color: white;">Komentar: </label>
+                    </div>
+                    <div>
+                        <textarea class="polja" name="comment" rows="5"
+                            placeholder="Potrebno je oceniti slušalice ocenom od 1 do 10 i opisati svoje iskustvo prilikom korišćenja. Mi cenimo Vaše mišljenje!"></textarea>
+                    </div>
+                    <div class="dugmici">
+                        <div class="submit">
+                            <input style="border: 1px; background-color: white;color: black" type="submit"
+                                value="Pošalji" />
+                        </div>
+
+                        <div class="reset">
+                            <input style="border: 1px; background-color: white;color: black" type="reset" value="Obriši">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <div class="telo red ">
+
+                <div>
+                    <p>
+                        Kontaktirajte nas:
+                        <a href="mailto:ocenibeats@gmail.com">ocenibeats@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/png" href="Images/logo.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+    <script src="js/galerija.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#menuOpener").click(function () {
+                if ($(".navbar-menu").hasClass("active")) {
+                    $(".navbar-menu").removeClass("active");
+                } else {
+                    $(".navbar-menu").addClass("active");
+                }
+
+            });
+        });
+    </script>
+
+    <title>Oceni Beats</title>
+</head>
+
+<body class = "index">
+    <div class="page-content-wrapper">
+        <div class="navbar" id="index-nav">
+            <div> 
+                <ul id="list-navbar">
+
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a class="active" href="galerija.html">Slušalice</a></li>
+                    <li><a href="oceni.html">Oceni</a></li>
+                    <li><a href="autor.html">Autor</a></li>
+                    
+                    <span id="menuOpener"><i class="fa fa-bars"></i></span>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="mobile-nav">
+            <nav class="navbar-menu">
+
+                <ul class="menu-listing">
+
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="galerija.html">Slušalice</a></li>
+                    <li><a href="oceni.html">Oceni</a></li>
+                    <li><a href="autor.html">Autor</a></li>
+                    
+                </ul>
+            </nav>
+         </div>
+
+        <div id="telo">
+            <div id="Galerija">
+                <div class="slajd">
+                    <div class="broj_slajda"></div>
+                    <img src="Images/studio3.jpg">
+                </div>
+
+                <div class="slajd">
+                    <div class="broj_slajda"></div>
+                    <img src="Images/solopro.jpg">
+                </div>
+
+                <div class="slajd">
+                    <div class="broj_slajda"></div>
+                    <img src="Images/solo3.jpg">
+                </div>
+
+                <div class="slajd">
+                    <div class="broj_slajda"></div>
+                    <img src="Images/ep.jpg">
+                </div>
+
+                 <div class="slajd">
+                    <div class="broj_slajda"></div>
+                    <img src="Images/powerbeats pro.jpg">
+                </div>
+
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+               
+                <div class="tacke" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+         <div class="footer">
+            <div class="telo red ">
+                
+                <div>
+                    <p>
+                        Kontaktirajte nas: 
+                    <a href="mailto:ocenibeats@gmail.com">ocenibeats@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

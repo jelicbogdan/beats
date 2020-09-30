@@ -1,0 +1,404 @@
+* {
+    font-family: 'Aldrich';
+    color: red;
+}
+
+body {
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    background-image: url("../Images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 1280px 585px;
+    background-color: #cccccc;
+
+}
+
+p {
+    font-weight: 100;
+    text-align: justify;
+    line-height: 22px;
+
+}
+
+.enter {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+
+@media screen and (max-width: 599px) {
+    .enter {
+        display: block;
+    }
+
+
+    .img-fluid {
+        width: 100%;
+        height: auto;
+    }
+
+    div.tekstZaAutora {
+        display: block;
+        position: relative !important;
+        left: unset !important;
+        top: unset !important;
+        padding: 5px 15px;
+        text-align: center;
+    }
+
+    #oceni_page {
+        background-size: unset;
+    }
+
+    #oceni_page .kontakt {
+        padding: 0px 15px;
+    }
+
+    input.polja,
+    textarea.polja,
+    select {
+        width: 100%;
+    }
+
+    .dugmici {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .submit,
+    .reset {
+        padding: 5px;
+    }
+
+    form {
+        width: 80%;
+        margin: auto;
+    }
+
+    #ja {
+        position: relative !important;
+        display: block;
+        height: 100%;
+        width: 100%;
+        right: unset !important;
+    }
+
+    .footer {
+        position: relative !important;
+    }
+
+    .autor,
+    div.tekstZaAutora {
+        display: block !important;
+        height: 100%;
+        position: relative;
+    }
+
+    div.img-block {
+        display: block;
+        height: 100%;
+        position: relative;
+    }
+
+    #index-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        min-height: 200px;
+    }
+
+    br {
+        display: none;
+    }
+
+    div#Galerija {
+        height: 100%;
+    }
+
+    a.prev,
+    a.next {
+        color: black;
+    }
+
+    a.prev:hover,
+    a.next:hover {
+        background-color: transparent;
+    }
+
+    .mobile-nav nav.navbar-menu {
+        display: block;
+        top: 0;
+    }
+}
+
+.autor {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+
+}
+
+#ja {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+}
+
+div.tekstZaAutora {
+    position: absolute;
+    left: 5%;
+    top: 20%;
+}
+
+.tekstZaAutora a:hover {
+    color: blue;
+}
+
+
+.footer {
+    background-color: #000000;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 10%;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 8 px;
+    color: white;
+
+}
+
+.footer .telo>div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 0px;
+}
+
+.footer a:hover {
+    color: blue;
+}
+
+.navbar {
+
+    min-width: 100%;
+    margin-top: 0;
+    margin: 0 auto;
+    display: flex;
+
+    justify-content: space-around;
+    flex-wrap: wrap;
+    z-index: 2;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.0);
+    background-color: #000000;
+
+    height: 10%;
+
+}
+
+#index-nav {
+    position: relative;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.0);
+}
+
+#list-navbar {
+
+    padding: 5px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+.navbar li a {
+    display: block;
+    color: red;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: white;
+}
+
+.active {
+    background-color: white;
+}
+
+.mobile-nav {
+    position: relative;
+}
+
+.navbar-menu.active {
+    display: block;
+}
+
+.index .navbar-menu {
+    top: 99px;
+    z-index: 20;
+}
+
+.navbar-menu {
+    background-color: #fafafa;
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    transition: 0.5s;
+}
+
+.navbar-menu.active {
+    transform: translateX(0);
+    transition: 0.5s;
+}
+
+.navbar-menu .menu-listing {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.menu-listing li {
+    display: flex;
+}
+
+.menu-listing li a {
+    background-color: #fff;
+    color: #262626;
+    width: 100%;
+    display: block;
+    font-size: 1rem;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.menu-listing li a:hover {
+    background-color: #B5B0B0;
+    color: white;
+    transition: 0.5s;
+}
+
+#menuOpener {
+    display: none;
+}
+
+.index #menuOpener i {
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    #menuOpener {
+        display: block;
+    }
+
+    #list-navbar li {
+        display: none;
+    }
+}
+
+@media (min-width: 1025px) {
+    .mobile-nav {
+        display: none;
+    }
+}
+
+#Galerija {
+    box-sizing: border-box;
+    height: 100vh;
+    position: relative;
+    margin: auto;
+    z-index: 1;
+}
+
+.slajd {
+    display: none;
+    position: absolute;
+    height: auto;
+    width: 100%;
+}
+
+.slajd img {
+    width: 100%;
+    max-height: 530px;
+    height: inherit;
+    object-fit: scale-down;
+}
+
+.slajd:first-child {
+    display: block;
+}
+
+
+.tacke {
+    position: relative;
+    top: -25px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}

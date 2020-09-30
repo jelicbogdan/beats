@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/png" href="Images/logo.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#menuOpener").click(function () {
+                if ($(".navbar-menu").hasClass("active")) {
+                    $(".navbar-menu").removeClass("active");
+                } else {
+                    $(".navbar-menu").addClass("active");
+                }
+
+            });
+        });
+    </script>
+
+    <title>Oceni Beats</title>
+</head>
+
+<body class = "index">
+    <div class="page-content-wrapper">
+        <div class="navbar" id="index-nav">
+            <div> 
+                <ul id="list-navbar">
+
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="galerija.html">Slušalice</a></li>
+                    <li><a href="oceni.html">Oceni</a></li>
+                    <li><a class="active" href="autor.html">Autor</a></li>
+                    
+                    <span id="menuOpener"><i class="fa fa-bars"></i></span>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mobile-nav">
+            <nav class="navbar-menu">
+
+                <ul class="menu-listing">
+
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="galerija.html">Slušalice</a></li>
+                    <li><a href="oceni.html">Oceni</a></li>
+                    <li><a href="autor.html">Autor</a></li>
+                    
+                </ul>
+            </nav>
+         </div>
+        <br>
+        <br>
+        <br>
+
+
+        <div class="autor">
+           <div class="tekstZaAutora">
+             <p>
+                 <h1><b>Bogdan Jelic</b></h1>
+                 <h4><i>E-mail: <a href="bj20170050@student.fon.bg.ac.rs">bj20170050@student.fon.bg.ac.rs</a></i></h4>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <img src="Images/fon.png" alt="Logo - Fakultet organizacionih nauka" width="300px" height="125px">
+             </p>
+           </div>
+           <div class="img-block">
+             <img src="Images/ja.jpg" alt="Boris Odalović" id="ja" width="350px" height="350px">
+           </div>
+        </div>
+
+
+         <div class="footer">
+            <div class="telo red ">
+                
+                <div>
+                    <p>
+                        Kontaktirajte nas: 
+                    <a href="mailto:ocenibeats@gmail.com">ocenibeats@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
